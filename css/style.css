@@ -29,7 +29,7 @@ body {
   font-weight: 400;
   color: var(--dark-text-color);
   overflow-x: hidden;
-  background-color: #8D99AE;
+  background-color: rgb(212, 212, 212);
 }
 
 .main{
@@ -107,7 +107,7 @@ padding: 2px 0;
 }
 
 .navbar-nav .nav-item{
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -132,6 +132,17 @@ padding: 2px 0;
   
 }
 
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-item{
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 /* Details */
 
 .details{
@@ -146,12 +157,19 @@ padding: 2px 0;
 
 .about p{
   line-height: 2.0;
+  text-align: justify;
 }
 
 .about h1{
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   
+}
+
+.underline{
+  width: 100px;
+  height: 2px;
+  margin: 4px auto;
 }
 
 .right-side-box{
@@ -196,9 +214,9 @@ padding: 2px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #333;
+  background-color: #000;
   padding: 10px;
-  background-image: url("img/bac/.jpeg");
+  /*background-image: url("../img/ipo.jpg"); */
 }
 
 .records .record-box{
@@ -208,9 +226,10 @@ padding: 2px 0;
 
 .testimony{
   padding: 50px;
-  background-color: #1f1f29;
+ /* background-image: url('../img/ip.jpg');*/
   color: white;
   text-align: center;
+  background-color: #333;
 }
 
 .testimony h4{
@@ -232,6 +251,71 @@ padding: 2px 0;
 }
 
 
+/* Form CSS */
+
+.input-box{
+  background-color: #f4f4f4 !important;
+  padding: 4px 12px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  /*box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);*/
+}
+
+input[type], select{
+  border: none;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6C757D;
+  background-color: #f4f4f4;
+}
+
+input[type]:focus, select:focus{
+  outline: none;
+}
+
+
+label{
+  width: 100%;
+ font-size: 0.7rem;
+ font-weight: 600;
+ background-color: #f4f4f4 !important;
+}
+
+label.custom-control-label{
+  font-size: 0.8rem;
+  color: #6C757D;
+
+}
+
+label i {
+  margin-right: 8px;  
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6C757D;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #000;
+}
+
+.submit-btn{
+  background-image: linear-gradient(to right,  #099CEC , #6BC3F3);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+  margin: 20px;
+}
 
 /*Media querie*/
 
